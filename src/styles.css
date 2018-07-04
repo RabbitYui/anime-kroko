@@ -1,0 +1,57 @@
+@import "assets/styles/game.css";
+
+@font-face {
+  font-family: '7:12 Serif';
+  src: url('/assets/fonts/712/712-Serif.eot');
+  src: url('/assets/fonts/712/712-Serif.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/712/712-Serif.woff2') format('woff2'),
+  url('/assets/fonts/712/712-Serif.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  width: 100%;
+  background-color: #32CD32;
+  height: 156px;
+  box-shadow: 0px 10px 7px rgba(0,0,0,0.34);
+}
+
+.header_text {
+  font-family: '7:12 Serif';
+  font-weight: 500;
+  font-size: 72px;
+  color: #fff;
+  top: 56px;
+  margin-left: 22px;
+  position: absolute;
+  display: inline-block;
+}
+
+.header_image {
+  border: 7px;
+  border-style: solid;
+  border-color: #fff;
+  border-radius: 50%;
+  height: 135px;
+  width: 135px;
+  top: 3px;
+  margin-left: 23px;
+  position: relative;
+  display: inline-block;
+  background-image: url(/assets/images/03e-620x.jpg);
+  background-repeat: no-repeat;
+  background-size: 295px auto;
+  background-position-x: -41px;
+  background-position-y: -8px;
+}
+
+main {
+  height: 934px;
+  width: auto;
+  background-size: 934px;
+  background: linear-gradient(to top right, #002f00 3%, #32cd32 18%, #218b21 30%, #006300 50%, #002f00 70%) 100% 0% / 50% 50% no-repeat,
+  linear-gradient(to top left, #002f00 3%, #32cd32  18%, #218b21 30%, #006300 50%, #002f00 70%) 0% 0% / 50% 50% no-repeat,
+  linear-gradient(to bottom left, #002f00 3%, #32cd32 18%, #218b21 30%, #006300 50%, #002f00 70%) 0% 100% / 50% 50% no-repeat,
+  linear-gradient(to bottom right, #002f00 3%, #32cd32 18%, #218b21 30%, #006300 50%, #002f00 70%) 100% 100% / 50% 50% no-repeat;
+}

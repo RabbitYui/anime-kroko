@@ -1,0 +1,10 @@
+@font-face {
+    font-family: '7:12 Serif';
+    src: url('712-Serif.eot');
+    src: url('712-Serif.eot?#iefix') format('embedded-opentype'),
+        url('712-Serif.woff2') format('woff2'),
+        url('712-Serif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

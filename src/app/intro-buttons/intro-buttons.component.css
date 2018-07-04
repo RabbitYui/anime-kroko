@@ -1,0 +1,64 @@
+@font-face {
+font-family: 'Fixedsys';
+font-style: normal;
+font-weight: normal;
+src: url('/assets/fonts/fixedsys/FSEX300.woff') format('woff');
+}
+
+.start_block {
+  background-color: rgba(255, 255, 255, 0.84);
+  width: 741px;
+  height: 759px;
+  margin: 79px auto;
+  border-radius: 30px;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.big_logo {
+  width: 310px;
+  height: 310px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  background-image: url(/assets/images/03e-620x.jpg);
+  background-repeat: no-repeat;
+  margin: 19px auto;
+  left: 0;
+  right: 0;
+  background-position-x: -105px;
+}
+
+.settings_button {
+  width: 657px;
+  height: 99px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 7px rgba(0,0,0,0.34);
+  background-color: #fff;
+  margin: 17px auto;
+  left: 0;
+  right: 0;
+  font-size: 48px;
+  color: rgb(92,92,92);
+  font-family: "Fixedsys";
+  text-align: center;
+  letter-spacing: 2px;
+  display: block;
+}
+
+.start_button {
+  width: 657px;
+  height: 99px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 7px rgba(0,0,0,0.34);
+  background-color: #31cd31;
+  margin: 17px auto;
+  left: 0;
+  right: 0;
+  font-size: 48px;
+  color: rgb(255,255,255);
+  font-family: "Fixedsys";
+  text-align: center;
+  letter-spacing: 2px;
+  display: block;
+}

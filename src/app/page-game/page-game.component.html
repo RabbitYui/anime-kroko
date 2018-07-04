@@ -1,0 +1,20 @@
+<header>
+  <div class="header">
+    <div class="header_image">
+
+    </div>
+    <div class="header_text">
+      АНИМЕ КРОКОДИЛ
+    </div>
+  </div>
+</header>
+<main>
+
+  <div class="game-wrapper">
+    <div class="game-background" (click)="next()" *ngIf="animes">
+      <div class="anime-title">{{animes[animeIndex].name}}</div>
+      <img [src]="api.host + animes[animeIndex].image.original">
+    </div>
+  </div>
+
+</main>
