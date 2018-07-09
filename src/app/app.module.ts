@@ -7,8 +7,8 @@ import { AppComponent } from './app.component';
 import { IntroButtonsComponent } from './intro-buttons/intro-buttons.component';
 import { PageHomeComponent } from './page-home/page-home.component';
 import { PageGameComponent } from './page-game/page-game.component';
-import {ShikimoriApiService} from "./services/shikimori-api.service";
-import {JsonpModule} from "@angular/http";
+import {ShikimoriApiService} from './services/shikimori-api.service';
+import {JsonpModule} from '@angular/http';
 
 const appRoutes: Routes = [
   { path: '', component: PageHomeComponent },

@@ -1,30 +1,4 @@
 
-@font-face {
-  font-family: '7:12 Serif';
-  src: url('/assets/fonts/712/712-Serif.eot');
-  src: url('/assets/fonts/712/712-Serif.eot?#iefix') format('embedded-opentype'),
-  url('/assets/fonts/712/712-Serif.woff2') format('woff2'),
-  url('/assets/fonts/712/712-Serif.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Fixedsys';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/fixedsys/FSEX300.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Palatino Linotype';
-  src: url('assets/fonts/PalatinoLinotype/PalatinoLinotype.woff2') format('woff2'),
-      url('assets/fonts/PalatinoLinotype/PalatinoLinotype.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
 .header {
   width: 100%;
   background-color: #32CD32;

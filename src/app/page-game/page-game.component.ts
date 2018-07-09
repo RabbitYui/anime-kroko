@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {ShikimoriApiService} from "../services/shikimori-api.service";
+import {ShikimoriApiService} from '../services/shikimori-api.service';
 
 @Component({
   selector: 'app-page-game',
   templateUrl: './page-game.component.html',
-  styles: []
+  styleUrls: ['./page-game.component.css']
 })
 export class PageGameComponent implements OnInit {
 
@@ -18,7 +18,7 @@ export class PageGameComponent implements OnInit {
     this.api.getAnimes().then(animes => {
       console.log(animes);
       this.animes = animes;
-    })
+    });
   }
 
   next() {
