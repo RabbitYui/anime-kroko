@@ -11,11 +11,11 @@
 <main>
 <div class="big_main_block">
   <div class="anime_title">
-    Врата Штейна 0 / Steins;Gate 0
+    {{animeList[animeIndex].name}}/{{animeList[animeIndex].russian}}
   </div>
   <div class="all_content_block">
-    <div class="anime_pic">
-
+    <div class="anime_pic"
+      [ngStyle]="{'background-image': 'url(' + api.host + animeList[animeIndex].image.original + ')'}">
     </div>
     <div class="right_content_block">
       <div class="timer">
@@ -30,19 +30,12 @@
         <div class="description_line">
           Вдруг описание поможет
         </div>
-        <div class="description_block">
-            Впавший в отчаяние Ринтаро Окабэ изо всех сил пытается оправиться от последней
-           неудачной попытки изменить будущее. Стремясь забыть все то, что он пережил
-            в прошлом, и избавиться от терзающих его сознание болезненных воспоминаний,
-            он решает забросить свое второе «я» в лице безумного ученого и начать жить
-             как подобает обычному студенту. Как только, казалось бы, жизнь начинает
-              налаживаться, он внезапно встречает Махо Хиядзё, знакомую Курису Макисэ
-              из американского университета. Махо рассказывает Ринтаро, что в их лаборатории уже начали тестирование нового изобретения, которое предоставляет возможность хранить память человека и способно воссоздать его личностные качества со всеми особенностями характера внутри себя. Приобретение возможности симулировать с помощью этого устройства память Курису приносит в жизнь Окабэ новый переполох, как будто бы возвращая его в пугающее прошлое. Он даже подумать не мог, что это принесет столько мучений и новых неожиданных последствий в предстоящие времена.
+        <div class="description_block" [innerHtml]="animeItem.description_html">
         </div>
       </div>
     </div>
   </div>
-  <button type="button" name="guessed" class="guessed_button" onclick="next()">
+  <button type="button" name="guessed" class="guessed_button" (click)="next()">
     ОТГАДАНО
   </button>
 </div>

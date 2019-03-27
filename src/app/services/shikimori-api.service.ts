@@ -13,7 +13,7 @@ export class ShikimoriApiService {
 
   get(url: string, params = null): Promise<any> {
 
-    let urlParams = [];
+    const urlParams = [];
 
     if (params) {
 
@@ -27,18 +27,22 @@ export class ShikimoriApiService {
       .toPromise()
       .then(response => response)
       .catch((response: any) => {
-        console.error(response)
+        console.error(response);
       });
   }
 
   getAnimes() {
 
     const params = {
-      limit: 30,
+      limit: 100,
       order: 'popularity'
     };
 
-    return this.get(`/api/animes`, params)
+    return this.get(`/api/animes`, params);
+  }
+
+  getAnimeItem(id) {
+    return this.get(`/api/animes/` + id);
   }
 
 }

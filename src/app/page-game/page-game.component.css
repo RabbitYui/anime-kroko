@@ -23,7 +23,8 @@
 .anime_pic {
   width: 354px;
   height: 497px;
-  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 20px;
 }
 
